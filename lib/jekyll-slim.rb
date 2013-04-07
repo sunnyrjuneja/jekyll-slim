@@ -1,6 +1,6 @@
 require 'slim'
 require 'jekyll-slim/version'
-require 'jekyll-slim/convertible'
+require 'jekyll-slim/ext/convertible'
 
 module Jekyll
   class SlimConverter < Converter
