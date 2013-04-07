@@ -1,10 +1,10 @@
-# Jekyll::Slim
+# Jekyll-slim
 
-TODO: Write a gem description
+A gem that adds [slim-lang](http://slim-lang.com) support to [Jekyll](http://github.com/mojombo/jekyll). Works for for pages, includes and layouts.
 
 ## Installation
 
-Add this line to your application's Gemfile:
+Add this line to your Gemfile:
 
     gem 'jekyll-slim'
 
@@ -16,9 +16,37 @@ Or install it yourself as:
 
     $ gem install jekyll-slim
 
+In your Jekyll project's `_plugins` directory:
+
+    # _plugins/bundler.rb
+    require 'rubygems'
+    require 'bundler/setup'
+    Bundler.require(:default)
+
 ## Usage
 
-TODO: Write usage instructions here
+The gem will convert all the `.slim` files in your project's directory into HTML. That includes files in sub-directories, includes and layouts. Example:
+
+```
+# _layouts/default.slim
+html
+  head
+  body
+    .content-wrapper
+      | {{ content }}
+```
+
+
+```
+# index.slim
+---
+layout: default
+---
+
+section.content
+  | {% include footer.slim %}
+
+```
 
 ## Contributing
 

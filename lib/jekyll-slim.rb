@@ -17,9 +17,9 @@ module Jekyll
 
     def convert(content)
       begin
-        Slim::Template.new { content }.render
+        ::Slim::Template.new { content }.render
       rescue StandardError => e
-        puts "!!! SLIM Error: " + e.message
+        puts "(!) SLIM ERROR: " + e.message
       end
     end
   end

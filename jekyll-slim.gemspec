@@ -9,7 +9,7 @@ Gem::Specification.new do |gem|
   gem.authors       = ["Reda Lemeden"]
   gem.email         = ["reda@thoughtbot.com"]
   gem.description   = %q{Slim html converter for Jekyll}
-  gem.summary       = %q{Convert Slim templates to HTML}
+  gem.summary       = %q{Slim-lang support for Jekyll. Handles includes and layouts as well.}
   gem.homepage      = ""
 
   gem.files         = `git ls-files`.split($/)
