@@ -1,5 +1,7 @@
 # Jekyll-slim
 
+[![Gem Version](https://badge.fury.io/rb/jekyll-slim.png)](http://badge.fury.io/rb/jekyll-slim)
+
 A gem that adds [slim-lang](http://slim-lang.com) support to [Jekyll](http://github.com/mojombo/jekyll). Works for for pages, includes and layouts.
 
 ## Installation
@@ -48,10 +50,7 @@ section.content
 
 ```
 
-## Contributing
+## Credit
 
-1. Fork it
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create new Pull Request
+Jekyll-slim was heavily inspired by [jekyll-haml](https://github.com/samvincent/jekyll-haml). It is free software, and may be redistributed under the terms specified in the LICENSE file.
+
