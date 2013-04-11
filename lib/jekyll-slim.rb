@@ -1,5 +1,6 @@
 require 'slim'
 require 'jekyll-slim/version'
+require 'jekyll-slim/tags/slim_partial'
 require 'jekyll-slim/ext/convertible'
 
 module Jekyll
